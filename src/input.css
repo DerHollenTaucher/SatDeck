@@ -24,7 +24,7 @@ html, body {
   transform: translate(-50%, -50%) !important;
 
   width: 90vw !important;
-  height: 60vw !important;      /* 1.5 : 1 ratio */
+  height: 80vh !important;      /* 1.5 : 1 ratio */
 
   max-width: 1200px !important;
   max-height: 800px !important;

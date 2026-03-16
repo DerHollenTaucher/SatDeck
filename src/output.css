@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.17 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.2.1 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -36,7 +36,6 @@
     --radius-2xl: 1rem;
     --radius-4xl: 2rem;
     --animate-spin: spin 1s linear infinite;
-    --blur-lg: 16px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -213,6 +212,12 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .start {
+    inset-inline-start: var(--spacing);
+  }
+  .end {
+    inset-inline-end: var(--spacing);
+  }
   .top-3 {
     top: calc(var(--spacing) * 3);
   }
@@ -272,7 +277,7 @@
     height: calc(var(--spacing) * 4.5);
   }
   .h-1\/2 {
-    height: calc(1/2 * 100%);
+    height: calc(1 / 2 * 100%);
   }
   .h-6 {
     height: calc(var(--spacing) * 6);
@@ -305,13 +310,13 @@
     min-height: calc(var(--spacing) * 0);
   }
   .w-1\/2 {
-    width: calc(1/2 * 100%);
+    width: calc(1 / 2 * 100%);
   }
   .w-1\/5 {
-    width: calc(1/5 * 100%);
+    width: calc(1 / 5 * 100%);
   }
   .w-4\/5 {
-    width: calc(4/5 * 100%);
+    width: calc(4 / 5 * 100%);
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
@@ -786,7 +791,7 @@ html, body {
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
   width: 90vw !important;
-  height: 60vw !important;
+  height: 80vh !important;
   max-width: 1200px !important;
   max-height: 800px !important;
   background: #050b0f;
