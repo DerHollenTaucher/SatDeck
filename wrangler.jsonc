@@ -1,0 +1,10 @@
+{
+  "site": {
+    "bucket": "./",
+    "exclude": [
+      "node_modules",
+      ".wrangler",
+      ".git"
+    ]
+  }
+}
