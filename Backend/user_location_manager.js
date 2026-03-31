@@ -39,7 +39,7 @@ export function requestHomeObserver(){
         err => {
             observerError = err.message;
 
-            // 🔁 FALLBACK TO CUSTOM
+            // FALLBACK TO CUSTOM
             observerMode  = "custom";
             observerReady = true;
         },
